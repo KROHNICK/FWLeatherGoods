@@ -7,7 +7,7 @@ export const TEST_SERVER_FAILURE = "TEST_SERVER_FAILURE";
 const baseURL =
   window.location.hostname === "localhost" ? "http://localhost:4000" : "url";
 
-export const test = () => dispatch => {
+export const testServer = () => dispatch => {
   dispatch({ type: TEST_SERVER });
   return axios
     .get(`${baseURL}/api/`)
