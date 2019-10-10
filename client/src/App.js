@@ -5,14 +5,14 @@ import axios from "axios";
 
 class App extends Component {
   componentDidMount() {
-    axios
-      .get("http://localhost:4000/")
-      .then(res => {
-        console.log(res);
-      })
-      .catch(err => {
-        console.log(err);
-      });
+    // axios
+    //   .get("http://localhost:4000/")
+    //   .then(res => {
+    //     console.log(res);
+    //   })
+    //   .catch(err => {
+    //     console.log(err);
+    //   });
   }
   render() {
     return <></>;
