@@ -1,22 +1,27 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
-import "./App.css";
 import axios from "axios";
+import { connect } from "react-redux";
+import { testServer } from "./actions/index";
+
+import "./App.css";
 
 class App extends Component {
   componentDidMount() {
-    axios
-      .get("http://localhost:4000/")
-      .then(res => {
-        console.log(res);
-      })
-      .catch(err => {
-        console.log(err);
-      });
+    this.props.testServer();
   }
   render() {
     return <></>;
   }
 }
 
-export default App;
+const mapStateToProps = state => ({
+  data: state.data,
+  error: state.error,
+  isTestingServer: state.isTestingServer,
+  isServerFunctional: state.isServerFunctional
+});
+
+export default connect(
+  mapStateToProps,
+  { testServer }
+)(App);
