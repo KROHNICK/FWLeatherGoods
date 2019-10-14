@@ -12,6 +12,7 @@ class Nav extends Component {
       <div className="wrapper">
         <nav className="navBar">
           <Link to="/">Home</Link>
+          <Link to="/products">Products</Link>
         </nav>
       </div>
     );
