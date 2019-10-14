@@ -9,6 +9,8 @@ import "./App.css";
 import HomeView from "./views/HomeView";
 import ProductsView from "./views/ProductView";
 import AboutView from "./views/AboutView";
+import ContactView from "./views/ContactView";
+import Contact from "./views/ContactView";
 
 class App extends Component {
   componentDidMount() {
@@ -20,6 +22,7 @@ class App extends Component {
         <Route exact path="/" component={HomeView} />
         <Route path="/products" component={ProductsView} />
         <Route path="/about" component={AboutView} />
+        <Route path="/contact" component={ContactView} />
       </div>
     );
   }
