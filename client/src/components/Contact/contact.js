@@ -1,15 +1,15 @@
 import React, { Component } from "react";
 import Nav from "../Nav/nav";
 
-class Products extends Component {
+class Contact extends Component {
   render() {
     return (
-      <div className="container">
-        <h1>Products Page</h1>
+      <div className="conatiner">
+        <h1>Contact Page</h1>
         <Nav />
       </div>
     );
   }
 }
 
-export default Products;
+export default Contact;
