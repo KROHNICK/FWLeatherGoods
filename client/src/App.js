@@ -6,6 +6,7 @@ import { testServer } from "./actions/index";
 
 import "./App.css";
 
+import Nav from "./components/Nav/nav";
 import HomeView from "./views/HomeView";
 import ProductsView from "./views/ProductView";
 import AboutView from "./views/AboutView";
@@ -19,6 +20,10 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        {/* Put nav bar here so it stays on for the other pages */}
+        <div className="navBar">
+          <Nav />
+        </div>
         <Route exact path="/" component={HomeView} />
         <Route path="/products" component={ProductsView} />
         <Route path="/about" component={AboutView} />
