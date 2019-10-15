@@ -9,7 +9,7 @@ class Nav extends Component {
 
   render() {
     return (
-      <div className="wrapper">
+      <div className="nav-container">
         <nav className="navBar">
           <Link to="/">Home</Link>
           <Link to="/products">Products</Link>

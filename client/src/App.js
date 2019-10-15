@@ -6,6 +6,7 @@ import { testServer } from "./actions/index";
 
 import "./App.css";
 
+import Header from "./components/Header/header";
 import HomeView from "./views/HomeView";
 import ProductsView from "./views/ProductView";
 import AboutView from "./views/AboutView";
@@ -19,6 +20,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <div className="headerDiv">
+          <Header />
+        </div>
         <Route exact path="/" component={HomeView} />
         <Route path="/products" component={ProductsView} />
         <Route path="/about" component={AboutView} />
