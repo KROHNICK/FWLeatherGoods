@@ -11,11 +11,21 @@ class Nav extends Component {
     return (
       <div className="nav-container">
         <nav className="navBar">
-          <Link to="/">Home</Link>
-          <Link to="/products">Products</Link>
-          <Link to="/about">About</Link>
-          <Link to="/aboutMe">AboutMe</Link>
-          <Link to="/contact">Contact</Link>
+          <div className="navItem">
+            <Link to="/">Home</Link>
+          </div>
+          <div className="navItem">
+            <Link to="/products">Products</Link>
+          </div>
+          <div className="navItem">
+            <Link to="/about">About</Link>
+          </div>
+          <div className="navItem">
+            <Link to="/aboutMe">AboutMe</Link>
+          </div>
+          <div className="navItem">
+            <Link to="/contact">Contact</Link>
+          </div>
         </nav>
       </div>
     );
