@@ -9,6 +9,7 @@ import {
 
 const initialState = {
   data: [],
+  products: [],
   error: null,
   isTestingServer: false,
   isServerFunctional: false,
@@ -16,7 +17,7 @@ const initialState = {
   isProductsFetched: false
 };
 
-export const reducer = (state = initialState, action) => {
+export const productsReducer = (state = initialState, action) => {
   switch (action.type) {
     case FETCHING_PRODUCTS:
       return {
@@ -28,7 +29,7 @@ export const reducer = (state = initialState, action) => {
     case PRODUCTS_FETCHED:
       return {
         ...state,
-        data: [],
+        products: [],
         isFetchingProducts: false,
         isProductsFetched: true
       };

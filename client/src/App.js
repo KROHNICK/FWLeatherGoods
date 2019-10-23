@@ -15,7 +15,7 @@ import ContactView from "./views/ContactView";
 
 class App extends Component {
   componentDidMount() {
-    this.props.testServer();
+    // this.props.testServer();
   }
   render() {
     return (
