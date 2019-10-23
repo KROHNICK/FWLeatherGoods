@@ -1,13 +1,36 @@
-import React from "react";
+import React, { Component } from "react";
+import { connect } from "react-redux";
+import { getProducts } from "../actions/index";
 
 import Products from "../components/Products/products";
 
-function ProductsView(props) {
-  return (
-    <div>
-      <Products />
-    </div>
-  );
+class ProductsView extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      products: []
+    };
+  }
+
+  componentDidMount() {
+    this.props.getProducts();
+  }
+
+  render() {
+    console.log(this.props.products);
+    return (
+      <div>
+        <Products products={this.props.products} />
+      </div>
+    );
+  }
 }
 
-export default ProductsView;
+const mapStateToProps = state => ({
+  products: state.products
+});
+
+export default connect(
+  mapStateToProps,
+  { getProducts }
+)(ProductsView);
