@@ -17,7 +17,6 @@ class ProductsView extends Component {
   }
 
   render() {
-    console.log(this.props.products);
     return (
       <div>
         <Products products={this.props.products} />
@@ -27,7 +26,7 @@ class ProductsView extends Component {
 }
 
 const mapStateToProps = state => ({
-  products: state.products
+  products: state.prod.products
 });
 
 export default connect(

@@ -29,7 +29,7 @@ export const productsReducer = (state = initialState, action) => {
     case PRODUCTS_FETCHED:
       return {
         ...state,
-        products: [],
+        products: action.payload,
         isFetchingProducts: false,
         isProductsFetched: true
       };

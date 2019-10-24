@@ -10,21 +10,24 @@ exports.seed = function(knex) {
           name: "testBag",
           price: 50,
           description: "Issa bag.",
-          image: "dummyImage"
+          image: "dummyImage",
+          stock: 2
         },
         {
           id: 2,
           name: "testWallet",
           price: 20,
           description: "Holds money.",
-          image: "dummyImage"
+          image: "dummyImage",
+          stock: 2
         },
         {
           id: 3,
           name: "testCardHolder",
           price: 10,
           description: "Holds cards.",
-          image: "dummyImage"
+          image: "dummyImage",
+          stock: 2
         }
       ]);
     });

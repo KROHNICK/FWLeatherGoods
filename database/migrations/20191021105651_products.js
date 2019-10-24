@@ -5,6 +5,7 @@ exports.up = function(knex) {
     tbl.integer("price").notNullable();
     tbl.text("description").notNullable();
     tbl.string("image").notNullable();
+    tbl.integer("stock").notNullable();
   });
 };
 
