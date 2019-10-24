@@ -15,6 +15,7 @@ class Products extends Component {
                 price={p.price}
                 description={p.description}
                 image={p.image}
+                stock={p.stock}
               />
             );
           })}
