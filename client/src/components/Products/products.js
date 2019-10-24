@@ -7,7 +7,7 @@ class Products extends Component {
     return (
       <div className="container">
         <div>
-          {/* {this.props.products.map(p => {
+          {this.props.products.map(p => {
             return (
               <Product
                 id={p.id}
@@ -17,7 +17,7 @@ class Products extends Component {
                 image={p.image}
               />
             );
-          })} */}
+          })}
         </div>
       </div>
     );
