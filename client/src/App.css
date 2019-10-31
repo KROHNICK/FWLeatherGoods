@@ -173,5 +173,6 @@ select {
 }
 
 .App {
-  border: 1px solid red;
+  max-width: 1000px;
+  margin: 0 auto;
 }
